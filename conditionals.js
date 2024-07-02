@@ -107,9 +107,6 @@
 
 // The date 2023-7-5 is greater than the date 2018-9-2
 
-// let date1 = "2018-9-2";
-
-// let date2 = "2023-7-5";
 
 // if (date1 > date2) {
 //     console.log(`The date ${date1} is greater than ${date2}`);
@@ -122,7 +119,7 @@
 //------------------------------------------------------------------------------------------------//
 //  Now try changing the value of the variables. As in the previous exercises, a string must be printed through the console that says if date 1 is greater than date 2 or the opposite.
 
-// let date1 = "2018-9-2";
+// let date1 = "2023-9-2";
 
 // let date2 = "2023-7-5";
 
@@ -136,12 +133,6 @@
 
 //------------------------------------------------------------------------------------------------//
 // In this case, create a conditional block that evaluates which of the three numbers stored in the variables is the largest. Print a string through the console that says “The number [ ] is the largest”.
-
-// let number1 = 5
-
-// let number2 = 7
-
-// let number 3 = 9
 
 // let number1 = 5
 
@@ -233,6 +224,7 @@
 
 // Diagram 2:
 
+//Inicio
 //prepararme para ir al trabajo
 //Desayunar (task1)
 //Estoy listo para el trabajo (condition)
@@ -244,6 +236,7 @@
 
 //Diagram3:
 
+//Inicio
 //Dia de estudio
 //Preparo el espacio de estudio (task1)
 //Me siento concentrado(condition)
@@ -252,6 +245,7 @@
 
 // Diagram 4:
 
+//Inicio
 //Decido salir a correr
 //Me levanto de la cama (task1)
 //El clima es bueno (condition)
@@ -337,11 +331,6 @@
 // Which of the two people is the taller?
 // Which is the oldest?
 // Tip! You can use nested if or logical operators.
-// let person = {
-//        name = Juan,
-//        age = 39,
-//        height = 1.69
-// }
 // Example Result: "Juan is taller and older than Rosa"
 
 // let person1 = {
@@ -355,14 +344,19 @@
 //     height : 1.99,
 // }
 
-// if(person1.height>person.height){
+// if(person1.height > person.height){
 //     console.log(`${person1.name} is more taller`)
-// }else if(person1.height<person.height){
-//     console.log(`${person.name} is more taller`)
 //     if (person1.age>person.age) {
 //         console.log(`${person1.name} is more oldest and ${person.name} is more taller` )
 //     }else if(person.age>person1.age){
 //         console.log(`${person.name} is more oldest and ${per1.name} is more taller`)
+//     }
+// }else if(person1.height < person.height){
+//     console.log(`${person.name} is more taller`)
+//     if (person1.age>person.age) {
+//         console.log(`${person1.name} is more oldest and ${person.name} is more taller` )
+//     }else if(person.age>person1.age){
+//         console.log(`${person.name} is more oldest and ${person1.name} is more taller`)
 //     }
 // }else{
 //     console.log(`error`)

@@ -254,7 +254,7 @@
 // let acierto= false;
 
 // do {
-//     numeroSecreto= parseInt(prompt("ingrese el numero secreto"));
+//     numeroSecreto = parseInt(prompt("ingrese el numero secreto"));
 //     if (numeroSecreto === resultado) {
 //         console.log(`¡Acertaste! El número secreto era ${resultado} y realizaste ${intentos} intentos.`);
 //         acierto = true;
