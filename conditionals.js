@@ -395,6 +395,7 @@
 
 // let age = parseFloat(prompt("enter you age in numbers"));
 
+
 // if(age <= 12){
 //     alert("infant");
 // }else if( age >= 13 && age <= 18){
@@ -407,6 +408,30 @@
 //     alert(" you are really that old?")
 // }else{
 //     console.log("invalid data")
+// }
+
+// // or: 
+// let age = parseInt(prompt("Enter your age in numbers"));
+
+// switch (true) {
+//   case (age < 13):
+//     console.log("You are an infant.");
+//     break;
+//   case (age >= 13 && age <= 18):
+//     console.log("You are an adolescent.");
+//     break;
+//   case (age >= 19 && age <= 45):
+//     console.log("You are an older young.");
+//     break;
+//   case (age > 45 && age <= 100):
+//     console.log("You are elderly.");
+//     break;
+//   case (age > 100):
+//     console.log("Is he really that old?");
+//     break;
+//   default:
+//     console.log("Invalid age entered.");
+//     break;
 // }
 
 //------------------------------------------------------------------------------------------------//

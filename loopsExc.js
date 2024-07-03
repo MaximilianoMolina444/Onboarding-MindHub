@@ -19,25 +19,25 @@
 // Suppose you have to prepare a large table for 15 people. In all cases you should place the plate in the center, the fork on the left, the knife on the right and the glass in front. How could you write the algorithm in summary?
 // What if instead of 15 there were 50 people? What would you change?
 
-//Iniciar
-//Para i desde 1 persona a 15 personas:
+// Iniciar
+// Para i desde 1 persona a 15 personas:
 // a. Colocar el plato en posición i
 // b. Colocar el tenedor a la izquierda de i
 // c. Colocar el cuchillo a la derecha de i
 // d. Colocar el vaso al frente a i
-//Fin
+// Fin
 
 // What if instead of 15 there were 50 people? What would you change?
 
-//Iniciar
-//Para i desde 1 persona a 50 personas:
+// Iniciar
+// Para i desde 1 persona a 50 personas:
 // a. Colocar el plato en posición i
 // b. Colocar el tenedor a la izquierda de i
 // c. Colocar el cuchillo a la derecha de i
 // d. Colocar el vaso al frente a i
-//Fin
+// Fin
 
-//------------------------------------------------------------------------------------------------------//
+// ------------------------------------------------------------------------------------------------------//
 
 // Do a "desktop test", showing how much "i" is worth in each case, and what is printed on the screen, for the following exercise:
 
@@ -45,28 +45,27 @@
 //   console.log("Número actual: " + i);
 // }
 
-
 // link: https://docs.google.com/document/d/1obr_tAf3MucbaMnQRh9ZWv-emx_Tg_lRIb-EJ9SNC14/edit?usp=sharing
 
-//------------------------------------------------------------------------------------------------------//
+// ------------------------------------------------------------------------------------------------------//
 // Write an algorithm (line by line) that contains the steps to prepare an omelette. Keep in mind:
 // - of performing the action of beating "until they are fluffy"
 // - perform the action of "wait" when you are cooking them, "until they are cooked"
 
-//1 iniciar
-//2 recolectar los ingredientes necesarios para preparar la omelette
-//3 recolectar los utensilios necesarios para preparar la omelette
-//4 buscar un contenedor para cascar los huevos
-//5 cascar los huevos en el contenedor y condimentar
-//6 batir los huevos hasta que esten esponjosos
-//7 poner a calentar una sarten en la cocina
-//8 agregarle un poco de aceite o manteca
-//9 verter la preparacion en la sarten
-//10 mover ligeramente la sarten para que la preparacion se esparza
-//11 esperar hasta que los huevos esten cocidos
-//12 retirar suavemete en omelette de la sarten con una espatula
+// 1 iniciar
+// 2 recolectar los ingredientes necesarios para preparar la omelette
+// 3 recolectar los utensilios necesarios para preparar la omelette
+// 4 buscar un contenedor para cascar los huevos
+// 5 cascar los huevos en el contenedor y condimentar
+// 6 batir los huevos hasta que esten esponjosos
+// 7 poner a calentar una sarten en la cocina
+// 8 agregarle un poco de aceite o manteca
+// 9 verter la preparacion en la sarten
+// 10 mover ligeramente la sarten para que la preparacion se esparza
+// 11 esperar hasta que los huevos esten cocidos
+// 12 retirar suavemete en omelette de la sarten con una espatula
 
-//------------------------------------------------------------------------------------------------------------//
+// ------------------------------------------------------------------------------------------------------------//
 // Considering this algorithm:
 
 // Turn off the light switch
@@ -111,32 +110,31 @@
 // 10-fin
 
 //--------------------------------------------------------------------------------------//
-
-// let ingreseNumero = prompt("ingrese un numero entre 1 y 100");
-// ingreseNumero = parseInt(ingreseNumero);
-// console.log(typeof ingreseNumero);
-
-// if (ingreseNumero >= 1 && ingreseNumero <= 100) {
-//   for (let i = ingreseNumero; i >= 0; i--) {
-//     console.log(i);
-//   }
-// } else {
-//   console.log("el numero no se encuentra dentro del rango solicitado");
-// }
-
-//--------------------------------------------------------------------------------------//
 // Using a "for" loop, create a program that allows the entry of a number between 1 and 100 through a prompt, Then it prints through the console all the numbers that are between the entered number and 0 (that is, in descending order ).
 
-// let ingreseNumeroTabla = prompt("ingrese un numero entre 1 y 10 para averiguar su tabla")
+let ingreseNumber = prompt("ingrese un numero entre 1 y 100");
+ingreseNumber = parseInt(ingreseNumber);
+console.log(typeof ingreseNumber);
 
-// ingreseNumeroTabla = parseInt(ingreseNumeroTabla)
+if (ingreseNumber >= 1 && ingreseNumber <= 100) {
+  for (let i = ingreseNumber; i >= 0; i--) {
+    console.log(i);
+  }
+} else {
+  console.log("el numero no se encuentra dentro del rango solicitado");
+}
 
-// if (ingreseNumeroTabla <= 10) {
-//     for (let index = 0; index <=10; index++) {
-//         console.log(` tabla del ${ingreseNumeroTabla} = ${ingreseNumeroTabla} x ${index}   = ${index*ingreseNumeroTabla}`);
+//--------------------------------------------------------------------------------------//
+// Using a "for" loop, make a program that allows the entry of a number through a prompt between 1 and 10, and displays through the console it multiplication table (the first 10 multiples only)
+let ingreseNumeroTabla = prompt("ingrese un numero entre 1 y 10 para averiguar su tabla")
+ingreseNumeroTabla = parseInt(ingreseNumeroTabla)
 
-//     }
-// }
+if (ingreseNumeroTabla <= 10) {
+    for (let index = 0; index <=10; index++) {
+        console.log(` tabla del ${ingreseNumeroTabla} = ${ingreseNumeroTabla} x ${index}   = ${index*ingreseNumeroTabla}`);
+
+    }
+}
 
 //--------------------------------------------------------------------------------------//
 // Using a "while" loop, create a program that allows the entry of numbers through a prompt. The numbers must be added (acumulated) into a resulting variable. The entry of numbers will end when the user enters a 0. At the end, display the value of the sum variable through console.
@@ -144,18 +142,18 @@
 // Suppose you entered 1 then 3 then 0. This would be the result: 4.
 // Tip! Be careful, remember that the promt returns a string.
 
-// let ingreseUnNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
-// ingreseUnNumero=parseInt(ingreseUnNumero)
+let ingreseDato = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
+ingreseDato=parseInt(ingreseDato)
 
-// let resultado = 0;
+let acumulador = 0;
 
-// while (ingreseUnNumero !== 0) {
-//     resultado += ingreseUnNumero
-//     ingreseUnNumero = prompt("ingrese un numero")
-//     ingreseUnNumero=parseInt(ingreseUnNumero)
-// }
+while (ingreseDato !== 0) {
+    acumulador += ingreseDato
+    ingreseDato = prompt("ingrese un numero")
+    ingreseDato=parseInt(ingreseDato)
+}
 
-// console.log(`la suma total es: ${resultado}`);
+console.log(`la suma total es: ${acumulador}`);
 
 //------------------------------------------------------------------------------------------------//
 // Using now a "do while" loop and following the same instructions as the previous exercise, display in the console, the value of the variable that accumulates the sum of the numbers entered.
@@ -164,21 +162,21 @@
 
 // Tip! use backticks for this.
 
-// let ingreseUnNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
-// ingreseUnNumero=parseInt(ingreseUnNumero)
-// console.log(`el numero ingresado es: ${ingreseUnNumero} + `);
-// let resultado = 0;
+let ingreseNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
+ingreseUnNumero=parseInt(ingreseNumero)
+console.log(`el numero ingresado es: ${ingreseNumero} + `);
+let result= 0;
 
-// do {
-//     ingreseUnNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
-//     ingreseUnNumero=parseInt(ingreseUnNumero)
-//     console.log(`el numero ingresado es: ${ingreseUnNumero} + `);
-//     if(ingreseUnNumero !==0){
-//         resultado += ingreseUnNumero
-//     }
-// } while (ingreseUnNumero !== 0);
+do {
+    ingreseNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
+    ingreseNumero=parseInt(ingreseNumero)
+    console.log(`el numero ingresado es: ${ingreseNumero} + `);
+    if(ingreseNumero !==0){
+        result += ingreseNumero
+    }
+} while (ingreseNumero !== 0);
 
-// console.log(`la suma total es: ${resultado}`);
+console.log(`la suma total es: ${result}`);
 
 //------------------------------------------------------------------------------------------------//
 // Using a "for in" loop, create an object with at least 5 properties, make a program that cycles through said object and only shows all the keys of its properties in the console.
@@ -193,33 +191,33 @@
 
 // studies
 
-// let cartuchera = {
-//     lapices: "de muchos colores",
-//     tijeras : 1,
-//     lapiceras: 3,
-//     corrector: "bic",
-//     goma: "Faber-Castell",
-// }
+let cartuchera = {
+    lapices: "de muchos colores",
+    tijeras : 1,
+    lapiceras: 3,
+    corrector: "bic",
+    goma: "Faber-Castell",
+}
 
-// for (const key in cartuchera) {
-//     console.log(key);
-// }
+for (const key in cartuchera) {
+    console.log(key);
+}
 
 //------------------------------------------------------------------------------------------------//
 
 // Using a "for in" loop, create a program that runs through the object created in previous exercise and only displays the values of each of the keys in the console.
 
-// let cartuchera = {
-//     lapices: "de muchos colores",
-//     tijeras : 1,
-//     lapiceras: 3,
-//     corrector: "bic",
-//     goma: "Faber-Castell",
-// }
+let cartuchera2 = {
+    lapices: "de muchos colores",
+    tijeras : 1,
+    lapiceras: 3,
+    corrector: "bic",
+    goma: "Faber-Castell",
+}
 
-// for (const key in cartuchera) {
-//         console.log(cartuchera[key]);
-// }
+for (const key in cartuchera2) {
+        console.log(cartuchera2[key]);
+}
 
 //------------------------------------------------------------------------------------------------//
 
@@ -231,40 +229,40 @@
 
 // So on until the user guesses the secret number. Finally, show a congratulatory message on the screen and tell you how many attempts you have made ("You got it right! The secret number was <number> and you made <x> attempts"
 
-// let resultado = 0;
-// let intentos = 1;
-// let ingreseUnNumero;
-// ingreseUnNumero=parseInt(ingreseUnNumero)
-// resultado + ingreseUnNumero;
-// do {
-//     ingreseUnNumero = prompt("ingrese un numero para sumar // ingrese 0 para averiguar la suma total")
-//     ingreseUnNumero=parseInt(ingreseUnNumero)
-//     console.log(`el numero ingresado es: ${ingreseUnNumero} + `);
-//     if(ingreseUnNumero !==0){
-//         resultado += ingreseUnNumero
-//         console.log(`la suma total es: ${resultado}`);
-//     }
-//     intentos++
+let resultado = 0;
+let intentos = 1;
+let ingreseUnNumero;
+ingreseUnNumero=parseInt(ingreseUnNumero)
+resultado + ingreseUnNumero;
+do {
+    ingreseUnNumero = prompt("ingrese un numero para sumar // ingrese 0 para terminar")
+    ingreseUnNumero=parseInt(ingreseUnNumero);
+    console.log(`el numero ingresado es: ${ingreseUnNumero} + `);
+    if(ingreseUnNumero !==0){
+        resultado += ingreseUnNumero
+        console.log(`la suma total es: ${resultado}`);
+    }
+    intentos++
 
-// } while (ingreseUnNumero !== 0);
+} while (ingreseUnNumero !== 0);
 
-// console.log(`la suma total es: ${resultado}`);
+console.log(`la suma total es: ${resultado}`);
 
-// let numeroSecreto;
-// let acierto= false;
+let numeroSecreto;
+let acierto= false;
 
-// do {
-//     numeroSecreto = parseInt(prompt("ingrese el numero secreto"));
-//     if (numeroSecreto === resultado) {
-//         console.log(`¡Acertaste! El número secreto era ${resultado} y realizaste ${intentos} intentos.`);
-//         acierto = true;
-//     } else if (numeroSecreto > resultado) {
-//         console.log("El número ingresado es mayor que el secreto.");
-//     } else {
-//         console.log("El número ingresado es menor que el secreto.");
-//     }
+do {
+    numeroSecreto = parseInt(prompt("ingrese el numero secreto"));
+    if (numeroSecreto === resultado) {
+        console.log(`¡Acertaste! El número secreto era ${resultado} y realizaste ${intentos} intentos.`);
+        acierto = true;
+    } else if (numeroSecreto > resultado) {
+        console.log("El número ingresado es mayor que el secreto.");
+    } else {
+        console.log("El número ingresado es menor que el secreto.");
+    }
 
-// } while (!acierto)
+} while (!acierto)
 
 //--------------------------------------------------------------------------------------------------//
 // Using the loop that you consider as correct, create a program that receives a number through a prompt and displays all its divisors (dividers) through the console.
@@ -274,19 +272,19 @@
 // Suppose 50 was entered. This would be the result 50, 25, 10, 5, 2, 1
 // Tip! remember or investigate the operator %
 
-// let numero = prompt("ingrese un numero");
-// numero = parseInt(numero);
+let numero = prompt("ingrese un numero");
+numero = parseInt(numero);
 
-// if (numero <= 0) {
-//     console.log("Por favor, ingresa un número válido mayor que 0.");
-// } else {
-//     console.log(`Los divisores de ${numero} son:`);
-//     for (let i = 1; i <= numero; i++) {
-//         if (numero % i === 0) {
-//             console.log(i);
-//         }
-//     }
-// }
+if (numero <= 0) {
+    console.log("Por favor, ingresa un número válido mayor que 0.");
+} else {
+    console.log(`Los divisores de ${numero} son:`);
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) {
+            console.log(i);
+        }
+    }
+}
 
 //------------------------------------------------------------------------------------------------------------------//
 // Taking into account the ringing Bell function, create a loop (the one you consider) that displays a string through the console that in turn concatenates the string that the function returns as many times as the number that the user enters on the keyboard.
@@ -294,34 +292,34 @@
 // For example, if the user enters the number 5, the result should be:
 // Ding Dong, Ding Dong, Ding Dong, Ding Dong, Ding Dong
 
-// let tocarTimbre = parseInt(
-//   prompt("ingrese el numero de veces que quiere tcoar el timbre")
-// );
-// function RingBell() {
-//   console.log("Ding Dong");
+let tocarTimbre = parseInt(
+  prompt("ingrese el numero de veces que quiere tcoar el timbre")
+);
+function RingBell() {
+  console.log("Ding Dong");
 
-//   return "Ding Dong,";
-// }
-// let resultado = "";
+  return "Ding Dong,";
+}
+let total = "";
 
-// for (let i = 0; i < tocarTimbre; i++) {
-//   resultado + RingBell();
-// }
+for (let i = 0; i < tocarTimbre; i++) {
+  total + RingBell();
+}
 
-// console.log(resultado);
+console.log(total);
 
 //--------------------------------------------------------------------------------------------------//
 // Starting from the constants dateLimit and dates, make a loop (the one you consider) that shows in the console the dates in the array that are greater than or equal to the date stored in the constant dateLimite.
 
-// const dateLimit = "1997-8-3"
+const dateLimit = "1997-8-3"
 
-// const dates = ["1984-18-2", "1998-3-2", "1973-15-7", "2024-31-10", "2081-1-9"]
+const dates = ["1984-18-2", "1998-3-2", "1973-15-7", "2024-31-10", "2081-1-9"]
 
-// for (let i = 0; i < dates.length; i++) {
-//     if (dates[i] >= dateLimit) {
-//         console.log(dates[i]);
-//     }
-// }
+for (let i = 0; i < dates.length; i++) {
+    if (dates[i] >= dateLimit) {
+        console.log(dates[i]);
+    }
+}
 
 //------------------------------------------------------------------------------------------------------------------//
 // Using a "for of" loop, create an array of strings with colors and print each of the colors included in the array through the console.
@@ -342,21 +340,21 @@
 
 // White
 
-// const colors = ["Red", "Green", "Blue", "Violet", "Brown", "Black", "White"];
-// for (color of colors) {
-//     console.log(color);
-// }
+const colores = ["Red", "Green", "Blue", "Violet", "Brown", "Black", "White"];
+for (color of colores) {
+    console.log(color);
+}
 //------------------------------------------------------------------------------------------------------------------//
 // Now take the loop from the previous exercise as a reference and place it inside a function so that it performs the same task but can be reused as many times as necessary without having to rewrite the loop code.
 
-// const colors = ["Red", "Green", "Blue", "Violet", "Brown", "Black", "White"];
-// function imprimirEnConsola(array) {
-//     for (color of array) {
-//         console.log(color);
-//     }
-// }
+const colors = ["Red", "Green", "Blue", "Violet", "Brown", "Black", "White"];
+function imprimirEnConsola(array) {
+    for (color of array) {
+        console.log(color);
+    }
+}
 
-// imprimirEnConsola(colors);
+imprimirEnConsola(colors);
 
 //------------------------------------------------------------------------------------------------------------------//
 // Using a "for of" loop, create an array with 5 numbers and make a program that runs through that array and displays the double of each of the elements, in the console.
@@ -369,11 +367,11 @@
 // the number is 3 and its double is 6
 // the number is 50 and its double is 100
 
-// let numbers = [5, 7, 1, 3, 50];
+let numbers = [5, 7, 1, 3, 50];
 
-// for (const i of numbers) {
-//     console.log(`the number is ${i} and its double is ${i * 2}`);
-// }
+for (const i of numbers) {
+    console.log(`the number is ${i} and its double is ${i * 2}`);
+}
 
 //------------------------------------------------------------------------------------------------------------------//
 
@@ -395,32 +393,31 @@
 
 // Tip! use backticks for this.
 
-// let family = [
-//   { name: "Romina", last_name: "Perez", age: 13, member: "daughter" },
-//   { name: "Tomás", last_name: "Perez", age: 10, member: "son" },
-//   { name: "Juan", last_name: "Perez", age: 38, member: "father" },
-//   { name: "Romina", last_name: "Lopez", age: 40, member: "mother" },
-// ];
+let family = [
+  { name: "Romina", last_name: "Perez", age: 13, member: "daughter" },
+  { name: "Tomás", last_name: "Perez", age: 10, member: "son" },
+  { name: "Juan", last_name: "Perez", age: 38, member: "father" },
+  { name: "Romina", last_name: "Lopez", age: 40, member: "mother" },
+];
 
-// function presentFamily(family){
-//     for (const i of family) {
-//         console.log(`Hello, I am ${i.name} ${i.last_name} and I am ${i.age} years old.`)
-        
-//     }
-// }
+function presentFamily(family){
+    for (const i of family) {
+        console.log(`Hello, I am ${i.name} ${i.last_name} and I am ${i.age} years old.`)
 
-// presentFamily(family)
+    }
+}
+
+presentFamily(family)
 
 //------------------------------------------------------------------------------------------------------------------//
- 
- 
+
 // Using the loop that you consider, create a program that allows the entry of numbers on the screen through a prompt and
 
 // calculates the sum of the even numbers on the one hand and
 
 // the odd numbers on the other.
 
-// The data entry ends when the user enters a 0. 
+// The data entry ends when the user enters a 0.
 
 // In the console it should look like this (for example):
 
@@ -428,35 +425,33 @@
 
 // Odd numbers 30
 
+let sumaPares = 0;
+let sumaImpares = 0;
+let numeber;
 
-// let sumaPares = 0;
-// let sumaImpares = 0;
-// let numero;
+do {
+  number = prompt("Ingrese un número (0 para terminar): ");
+  if (number % 2 === 0) {
+    sumaPares += parseInt(number);
+  } else {
+    sumaImpares += parseInt(number);
+  }
+} while (parseInt(number) !== 0);
 
-// do {
-//   numero = prompt("Ingrese un número (0 para terminar): ");
-//   if (numero % 2 === 0) {
-//     sumaPares += parseInt(numero);
-//   } else {
-//     sumaImpares += parseInt(numero);
-//   }
-// } while (parseInt(numero) !== 0);
+    console.log(`Suma de números pares: ${sumaPares}`);
+    console.log(`Suma de números impares: ${sumaImpares}`);
 
-//     console.log(`Suma de números pares: ${sumaPares}`);
-//     console.log(`Suma de números impares: ${sumaImpares}`);
-
-
-//  //--------------------------------------------------------------------------------------------------//
+ //--------------------------------------------------------------------------------------------------//
 
 //  Using the loop that you think is correct, create an array of 10 numbers and make a program that prints the largest number in the array, on the screen.
 
-// let numeros = [3, 15, 7, 21, 4, 9];
-// let numeroMasGrande = numeros[0]; 
+let numeros = [3, 15, 7, 21, 4, 9];
+let numeroMasGrande = numeros[0];
 
-// for (let numero of numeros) {
-//   if (numero > numeroMasGrande) {
-//     numeroMasGrande = numero; 
-//   }
-// }
+for (let numero of numeros) {
+  if (numero > numeroMasGrande) {
+    numeroMasGrande = numero;
+  }
+}
 
-// console.log(`El número más grande es: ${numeroMasGrande}`);
+console.log(`El número más grande es: ${numeroMasGrande}`);
